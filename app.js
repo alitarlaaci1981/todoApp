@@ -8,14 +8,15 @@ ourForm.addEventListener("submit", (e) => {
 })
 
 function createItem(x) {
-    let ourHTML=`<li>${x} <button onclick="deleteItem(this)">Delete</button></li>`
-    ourList.insertAdjacentHTML("beforeend",ourHTML)
-    ourField.value=""
+    let ourHTML = `<li>${x} <button onclick="deleteItem(this)">Delete</button></li>`
+    ourList.insertAdjacentHTML("beforeend", ourHTML)
+    ourField.value = ""
     ourField.focus();
 
 }
 
-function deleteItem(elementToDelete){
+function deleteItem(elementToDelete) {
+    //this is a message to stash
     elementToDelete.parentElement.remove()
 }
 
