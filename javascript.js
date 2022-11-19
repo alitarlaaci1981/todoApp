@@ -4,3 +4,5 @@ const sum=numbers.reduce((previousTotal,value)=>{
     return previousTotal+value
 })
 console.log(sum)
+
+console.log("Push this first and revert it back")
